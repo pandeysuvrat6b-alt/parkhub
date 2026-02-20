@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-title" content="ParkHub">
     <meta name="theme-color" content="#667eea">
     <meta name="description" content="Smart Parking Solution in Mumbai">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/parkhub/manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='50%' y='50%' font-size='100' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>🅿️</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23667eea' width='180' height='180'/><text x='50%' y='50%' font-size='90' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>🅿️</text></svg>">
     <title>ParkHub - Smart Parking</title>
@@ -2087,7 +2087,7 @@
 
             // Register Service Worker for offline functionality and PWA
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('service-worker.js')
+                navigator.serviceWorker.register('/parkhub/service-worker.js')
                     .then(registration => {
                         console.log('✓ Service Worker registered successfully');
                     })
