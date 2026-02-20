@@ -1339,13 +1339,10 @@
                         <a href="tel:+919561738221" title="Call us">📞 +91 9561738221</a>
                         <a href="https://wa.me/919561738221" title="Chat on WhatsApp">💬 Chat</a>
                     </div>
-                    <div id="userSection">
-                        <!-- Will be populated by JavaScript based on login state -->
-                        <div class="user-info" onclick="openLoginModal()" style="cursor: pointer;">
-                            <div class="user-avatar">👤</div>
-                            <span style="font-size: 0.9rem;" id="userDisplay">Login</span>
-                        </div>
-                    </div>
+                    <button id="userSection" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.5rem 1rem; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; transition: background 0.3s;">
+                        <span style="font-size: 1.2rem;">👤</span>
+                        <span id="userDisplay">Login</span>
+                    </button>
                 </div>
                 <div class="hamburger" onclick="toggleMobileMenu()">
                     <span></span>
@@ -1959,36 +1956,19 @@
             const userSection = document.getElementById('userSection');
 
             if (currentUser) {
-                userDisplay.textContent = currentUser.name.split(' ')[0]; // First name only
-                userDisplay.style.cursor = 'default';
-                userDisplay.onclick = null;
-                // Add logout button
-                const logoutBtn = document.createElement('button');
-                logoutBtn.textContent = '🚪 Logout';
-                logoutBtn.style.cssText = 'margin-left: 1rem; background: #e74c3c; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-size: 0.85rem;';
-                logoutBtn.onclick = () => {
-                    currentUser = null;
-                    localStorage.removeItem('currentUser');
-                    showToast('👋 Logged out', 'info');
-                    updateUserDisplay();
+                userSection.innerHTML = `<span style="font-size: 1.2rem;">${currentUser.name[0]}</span><span>${currentUser.name.split(' ')[0]}</span>`;
+                userSection.onclick = () => {
+                    const logout = confirm(`Logout ${currentUser.name}?`);
+                    if (logout) {
+                        currentUser = null;
+                        localStorage.removeItem('currentUser');
+                        showToast('👋 Logged out', 'info');
+                        updateUserDisplay();
+                    }
                 };
-                userSection.innerHTML = '';
-                const userInfo = document.createElement('div');
-                userInfo.className = 'user-info';
-                userInfo.innerHTML = `<div class="user-avatar">${currentUser.name[0]}</div><span style="font-size: 0.9rem;">${currentUser.name.split(' ')[0]}</span>`;
-                userSection.appendChild(userInfo);
-                userSection.appendChild(logoutBtn);
             } else {
-                userDisplay.textContent = 'Login';
-                userDisplay.style.cursor = 'pointer';
-                userDisplay.onclick = openLoginModal;
-                userSection.innerHTML = '';
-                const userInfo = document.createElement('div');
-                userInfo.className = 'user-info';
-                userInfo.style.cursor = 'pointer';
-                userInfo.onclick = openLoginModal;
-                userInfo.innerHTML = `<div class="user-avatar">👤</div><span style="font-size: 0.9rem;">Login</span>`;
-                userSection.appendChild(userInfo);
+                userSection.innerHTML = '<span style="font-size: 1.2rem;">👤</span><span>Login</span>';
+                userSection.onclick = openLoginModal;
             }
         }
 
@@ -2472,10 +2452,6 @@ Call: +91 9561738221`;
             e.preventDefault();
             showToast('✓ Message sent! We will get back to you soon.', 'success');
             e.target.reset();
-        }
-
-        function toggleUserMenu() {
-            showToast('👤 Download the ParkHub app to create your account', 'info');
         }
 
         // Close modal when clicking outside
