@@ -1,372 +1,2334 @@
-# 📚 ParkHub PWA - Complete Documentation Index
-
-Welcome to your **Progressive Web App (PWA)** for parking management in Mumbai!
-
-## 🎯 Start Here
-
-**For quickest setup, run:**
-```powershell
-cd "c:\Users\shamb\OneDrive\Desktop\HTML"
-python server.py
-```
-
-Then open: **http://localhost:8000**
-
----
-
-## 📖 Documentation Guide
-
-### 📱 For First-Time Users
-**Start with:** [QUICKSTART.md](QUICKSTART.md)
-- 2-minute quick reference
-- Essential commands
-- Key features overview
-- Troubleshooting tips
-
-### 🚀 For Setup & Deployment
-**Read:** [DEPLOYMENT.md](DEPLOYMENT.md)
-- Installation instructions
-- Running locally
-- Deploying to web
-- API integration guide
-- Production checklist
-
-### ✅ For Testing & Validation
-**Follow:** [TESTING.md](TESTING.md)
-- Complete testing checklist
-- Feature verification
-- Browser compatibility
-- Performance testing
-- Offline mode testing
-
-### 📚 For Complete Details
-**See:** [README.md](README.md)
-- Full feature list
-- Installation on mobile
-- Customization guide
-- Browser support
-- Learning resources
-
-### 📊 For Project Overview
-**Check:** [SUMMARY.md](SUMMARY.md)
-- Project structure
-- Technical stack
-- All features included
-- Performance metrics
-- Next steps
-
----
-
-## 📁 Project Files
-
-```
-C:\Users\shamb\OneDrive\Desktop\HTML\
-│
-├─ 🖥️ CORE APPLICATION
-│  ├── index.html           (2,150+ lines - Main app)
-│  ├── manifest.json        (107 lines - PWA config)
-│  └── service-worker.js    (128 lines - Offline support)
-│
-├─ 🚀 UTILITIES
-│  └── server.py            (Local dev server)
-│
-└─ 📚 DOCUMENTATION
-   ├── README.md            (Complete guide)
-   ├── DEPLOYMENT.md        (Setup & deploy)
-   ├── TESTING.md           (Test checklist)
-   ├── SUMMARY.md           (Overview)
-   ├── QUICKSTART.md        (Quick reference)
-   └── INDEX.md             (This file)
-```
-
----
-
-## 🎯 Feature Matrix
-
-| Feature | File | Status |
-|---------|------|--------|
-| Booking System | index.html | ✅ Complete |
-| Location Data | index.html | ✅ Complete |
-| Real-time Pricing | index.html | ✅ Complete |
-| Form Validation | index.html | ✅ Complete |
-| Notifications | index.html | ✅ Complete |
-| Responsive Design | index.html | ✅ Complete |
-| Service Worker | service-worker.js | ✅ Complete |
-| PWA Manifest | manifest.json | ✅ Complete |
-| App Installation | manifest.json | ✅ Complete |
-| Offline Support | service-worker.js | ✅ Complete |
-| Push Notifications | service-worker.js | ✅ Ready |
-| Background Sync | service-worker.js | ✅ Ready |
-
----
-
-## 🏗️ Architecture Overview
-
-```
-┌─────────────────────────────────────┐
-│   PROGRESSIVE WEB APP (PWA)         │
-│                                     │
-│  ┌───────────────────────────────┐  │
-│  │   User Interface (HTML/CSS)   │  │
-│  │  - Header with navigation     │  │
-│  │  - Booking widget             │  │
-│  │  - Location showcase          │  │
-│  │  - Bottom nav bar             │  │
-│  └───────────────────────────────┘  │
-│           │                         │
-│           ▼                         │
-│  ┌───────────────────────────────┐  │
-│  │   Business Logic (JavaScript) │  │
-│  │  - Form validation            │  │
-│  │  - Price calculation          │  │
-│  │  - Booking management         │  │
-│  │  - Notifications              │  │
-│  └───────────────────────────────┘  │
-│           │                         │
-│           ▼                         │
-│  ┌───────────────────────────────┐  │
-│  │   PWA Features                │  │
-│  │  - Service Worker             │  │
-│  │  - Web Manifest               │  │
-│  │  - Offline Support            │  │
-│  │  - App Installation           │  │
-│  └───────────────────────────────┘  │
-│                                     │
-└─────────────────────────────────────┘
-```
-
----
-
-## 🎓 Quick Learning Path
-
-1. **Understand the Project** (5 min)
-   - Read QUICKSTART.md
-   - Overview of what you have
-
-2. **Set It Up** (5 min)
-   - Run `python server.py`
-   - Open http://localhost:8000
-
-3. **Explore Features** (15 min)
-   - Try booking a spot
-   - Filter by price
-   - Test form validation
-
-4. **Test Offline** (10 min)
-   - Follow TESTING.md
-   - Enable offline in DevTools
-   - Verify it still works
-
-5. **Install as App** (5 min)
-   - Install on mobile or desktop
-   - Launch from home screen
-   - Enjoy app experience
-
-6. **Customize** (varies)
-   - Change contact number
-   - Update colors
-   - Add more locations
-
-7. **Deploy** (varies)
-   - Get hosting
-   - Upload files
-   - Go live!
-
----
-
-## 🚀 Common Tasks
-
-### "I want to run it locally"
-→ See [QUICKSTART.md](QUICKSTART.md#🚀-start-here)
-
-### "I want to deploy it online"
-→ See [DEPLOYMENT.md](DEPLOYMENT.md#7️⃣-for-production-deployment)
-
-### "I want to change the contact number"
-→ See [README.md](README.md#🎨-customization)
-
-### "I want to add a new location"
-→ See [README.md](README.md#🎨-customization)
-
-### "I want to test everything"
-→ See [TESTING.md](TESTING.md)
-
-### "I want to understand the code"
-→ See [SUMMARY.md](SUMMARY.md#🎯-core-features)
-
-### "I want to install on my phone"
-→ See [README.md](README.md#2️⃣-install-the-pwa)
-
----
-
-## 🛠️ Development Commands
-
-```bash
-# Start development server
-python server.py
-
-# Then open in browser
-http://localhost:8000
-
-# To stop server
-# Press Ctrl+C in terminal
-```
-
----
-
-## 📊 Project Statistics
-
-| Metric | Value |
-|--------|-------|
-| Total Lines of Code | 2,400+ |
-| HTML Lines | 1,500+ |
-| CSS Lines | 600+ |
-| JavaScript Lines | 300+ |
-| Total File Size | ~95KB |
-| Load Time | < 2 seconds |
-| Lighthouse Score | 90+ |
-| Mobile Score | 95+ |
-
----
-
-## ✨ What's Included
-
-✅ Complete parking booking system  
-✅ 3 real Mumbai locations  
-✅ Real-time availability checking  
-✅ Multiple booking types (Hourly/Monthly/Corporate)  
-✅ Price filtering  
-✅ Form validation with error messages  
-✅ Beautiful UI with animations  
-✅ Mobile-first responsive design  
-✅ Progressive Web App features  
-✅ Service worker for offline  
-✅ App installation capability  
-✅ Push notifications (ready)  
-✅ Background sync (ready)  
-✅ Toast notifications  
-✅ FAQ section  
-✅ Testimonials  
-✅ Professional documentation  
-
----
-
-## 🎯 Browser & Device Support
-
-| Platform | Browser | Version | Support |
-|----------|---------|---------|---------|
-| Desktop | Chrome | 51+ | ✅ |
-| Desktop | Firefox | 44+ | ✅ |
-| Desktop | Safari | 11+ | ✅ |
-| Desktop | Edge | 79+ | ✅ |
-| Mobile | Chrome | Latest | ✅ |
-| Mobile | Safari | 11.3+ | ✅ |
-| Mobile | Samsung Internet | 5+ | ✅ |
-
----
-
-## 🔐 Security & Privacy
-
-✅ No external dependencies (no CDN)  
-✅ All code is local  
-✅ Form input sanitization  
-✅ XSS protection built-in  
-✅ CORS headers configured  
-✅ Service worker validation  
-✅ No third-party tracking  
-✅ HTTPS ready for production  
-
----
-
-## 🎯 Next Milestones
-
-### Phase 1: Testing (Current)
-- ✅ Core features complete
-- ⏳ Local testing on all devices
-- ⏳ Offline mode verification
-
-### Phase 2: Deployment (Soon)
-- ⏳ Get web hosting
-- ⏳ Configure HTTPS
-- ⏳ Deploy files
-- ⏳ Test on production
-
-### Phase 3: Integration (Next)
-- ⏳ Add payment gateway
-- ⏳ Connect backend API
-- ⏳ User authentication
-- ⏳ Database setup
-
-### Phase 4: Enhancement (Later)
-- ⏳ Real-time GPS tracking
-- ⏳ Push notifications
-- ⏳ User accounts
-- ⏳ Advanced analytics
-
----
-
-## 📞 Support Resources
-
-| Need | Resource |
-|------|----------|
-| Quick help | QUICKSTART.md |
-| Installation issues | DEPLOYMENT.md |
-| Testing problems | TESTING.md |
-| Full overview | SUMMARY.md |
-| Feature details | README.md |
-| Code explanation | index.html comments |
-
----
-
-## 🎓 Learning Materials
-
-- **PWA Documentation:** https://web.dev/progressive-web-apps/
-- **Service Workers:** https://mdn.io/Service_Worker_API
-- **Web Manifest:** https://web.dev/add-manifest/
-- **JavaScript:** https://developer.mozilla.org/en-US/docs/Web/JavaScript/
-- **CSS Animations:** https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations
-
----
-
-## 🏆 Success Checklist
-
-- [ ] Downloaded/cloned all files
-- [ ] Opened terminal in HTML folder
-- [ ] Run `python server.py`
-- [ ] Opened http://localhost:8000 in browser
-- [ ] Tested booking feature
-- [ ] Tried offline mode
-- [ ] Read documentation files
-- [ ] Tested on mobile device
-- [ ] Installed as app
-- [ ] Ready to customize or deploy
-
----
-
-## 🎉 You're All Set!
-
-Your PWA is complete and production-ready. Here's the recommended path:
-
-1. **Validate:** Run `python server.py` and test locally
-2. **Customize:** Change contact number, colors, or locations
-3. **Test:** Follow testing checklist in TESTING.md
-4. **Deploy:** Use DEPLOYMENT.md to go live
-5. **Integrate:** Connect real backend services
-6. **Launch:** Share with users!
-
----
-
-## 📧 Questions?
-
-Refer to the appropriate documentation file:
-- Quick questions → QUICKSTART.md
-- Setup issues → DEPLOYMENT.md
-- Feature verification → TESTING.md
-- Project details → SUMMARY.md
-- Usage guide → README.md
-
----
-
-**🚀 Ready to build your parking empire? Let's go!**
-
-Start with: `python server.py` → http://localhost:8000
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ParkHub">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="Smart Parking Solution in Mumbai">
+    <link rel="manifest" href="/parkhub/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='50%' y='50%' font-size='100' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>🅿️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23667eea' width='180' height='180'/><text x='50%' y='50%' font-size='90' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>🅿️</text></svg>">
+    <title>ParkHub - Smart Parking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        main {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            padding-top: 0;
+        }
+
+        /* App Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: max(1rem, env(safe-area-inset-top)) 0 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            flex-shrink: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .user-info:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Quick Stats Bar */
+        .stats-bar {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0.8rem 0;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .stats-bar span {
+            margin: 0 1rem;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: none;
+            z-index: 3000;
+            animation: slideIn 0.3s ease;
+            max-width: 400px;
+        }
+
+        .toast.show {
+            display: block;
+        }
+
+        .toast.success {
+            border-left: 4px solid #27ae60;
+            color: #27ae60;
+        }
+
+        .toast.error {
+            border-left: 4px solid #e74c3c;
+            color: #e74c3c;
+        }
+
+        .toast.info {
+            border-left: 4px solid #667eea;
+            color: #667eea;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            height: 3px;
+            background: #e0e0e0;
+            margin: 1rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* Quick Action Buttons */
+        .quick-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 12px 25px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .action-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .action-btn.primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-color: transparent;
+        }
+
+        .action-btn.primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Quick Filter Chips */
+        .filter-chips {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .chip {
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .chip:hover,
+        .chip.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* Summary Card */
+        .summary-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .summary-row:last-child {
+            border-bottom: none;
+        }
+
+        .summary-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .summary-value {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .summary-total {
+            font-size: 1.2rem;
+            color: #27ae60;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #667eea;
+        }
+
+        /* Input Feedback */
+        .form-field.error input,
+        .form-field.error select {
+            border-color: #e74c3c !important;
+        }
+
+        .form-field.success input,
+        .form-field.success select {
+            border-color: #27ae60 !important;
+        }
+
+        .field-error {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        .field-error.show {
+            display: block;
+        }
+
+        /* Loading State */
+        .btn:disabled,
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn.loading::after,
+        .search-btn.loading::after {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-left: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Header Contact Info */
+        .contact-quick {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-quick a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-quick a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1s ease;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            margin: 0 10px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            background: #f0f0f0;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3.5rem;
+            color: #333;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 1rem auto;
+            border-radius: 10px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-left: 5px solid #667eea;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+            border-left-color: #764ba2;
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+        }
+
+        .feature-card:hover h3 {
+            color: #764ba2;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f4f4f4;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border-top: 4px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: left 0.4s ease;
+        }
+
+        .service-item:hover {
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15);
+            transform: translateY(-8px);
+            border-top-color: #667eea;
+        }
+
+        .service-item:hover::before {
+            left: 100%;
+        }
+
+        .service-item h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .service-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Locations Section */
+        .portfolio {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: white;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.25);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item:hover .portfolio-image::before {
+            top: -70%;
+            right: -20%;
+        }
+
+        .portfolio-info {
+            padding: 2rem;
+            background: white;
+        }
+
+        .portfolio-info h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .testimonials .section-title {
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid white;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '★★★★★';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color: #ffd700;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .testimonial-card:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-8px);
+            border-left-color: #ffd700;
+        }
+
+        .testimonial-text {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            line-height: 1.8;
+            padding-top: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .testimonial-author::before {
+            content: '✓';
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #f4f4f4;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Footer / Bottom Navigation */
+        footer {
+            background: white;
+            color: #333;
+            border-top: 1px solid #e0e0e0;
+            padding: 0;
+            margin: 0;
+            flex-shrink: 0;
+        }
+
+        .footer-content {
+            display: none;
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 0;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .bottom-nav a {
+            flex: 1;
+            text-align: center;
+            padding: 0.8rem;
+            color: #666;
+            text-decoration: none;
+            border-top: 3px solid transparent;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .bottom-nav a:hover,
+        .bottom-nav a.active {
+            color: #667eea;
+            border-top-color: #667eea;
+            background: #f9f9f9;
+        }
+
+        .bottom-nav a span:first-child {
+            font-size: 1.5rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Booking Widget */
+        .booking-widget {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin-bottom: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 5px solid #667eea;
+        }
+
+        .booking-widget h3 {
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .booking-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-field label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .form-field input,
+        .form-field select {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .search-btn {
+            background: #667eea;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            align-self: flex-end;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: #764ba2;
+        }
+
+        /* Tab Navigation */
+        .booking-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab-btn {
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            margin-bottom: -2px;
+        }
+
+        .tab-btn.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-btn:hover {
+            color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Availability Display */
+        .availability-section {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .availability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .parking-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .parking-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.2);
+            border-left-color: #27ae60;
+        }
+
+        .parking-card h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .parking-stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .available {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .occupied {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .price {
+            color: #667eea;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .price::before {
+            content: '💰';
+            font-size: 1.2rem;
+        }
+
+        .book-btn {
+            background: #667eea;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .book-btn:hover {
+            background: #764ba2;
+        }
+
+        .availability-bar {
+            background: #e0e0e0;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .availability-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .modal-header h2 {
+            color: #667eea;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .confirmation-text {
+            color: #27ae60;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #e8f5e9;
+            border-left: 4px solid #27ae60;
+            border-radius: 4px;
+        }
+
+        /* FAQ Styles */
+        .faq-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: #f9f9f9;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-question span {
+            font-size: 1.5rem;
+            color: #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active span {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            background: white;
+            border-top: 1px solid #ddd;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 300px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                padding: 1rem;
+                gap: 0.5rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .nav-right {
+                display: none;
+            }
+
+            .booking-tabs {
+                flex-wrap: wrap;
+            }
+
+            .tab-btn {
+                padding: 0.7rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .features-grid,
+            .services-grid,
+            .portfolio-grid,
+            .testimonials-grid,
+            .availability-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-content {
+                padding: 1.5rem;
+            }
+
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+
+            .search-btn {
+                align-self: stretch;
+            }
+
+            .stats-bar {
+                font-size: 0.8rem;
+            }
+
+            .stats-bar span {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <div class="logo">🅿️ ParkHub</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#faq">Help</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="contact-quick">
+                        <a href="tel:+919561738221" title="Call us">📞 +91 9561738221</a>
+                        <a href="https://wa.me/919561738221" title="Chat on WhatsApp">💬 Chat</a>
+                    </div>
+                    <div class="user-info" onclick="toggleUserMenu()">
+                        <div class="user-avatar">U</div>
+                        <span style="font-size: 0.9rem;">Guest</span>
+                    </div>
+                </div>
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="stats-bar">
+            <span>⚡ Real-time Availability</span>
+            <span>💰 Transparent Pricing</span>
+            <span>🔒 Secure Payment</span>
+        </div>
+    </header>
+
+    <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🅿️ Smart Parking Made Easy</h1>
+            <p>Find, book, and pay for parking spots in seconds</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">50K+</span>
+                    <span class="hero-stat-label">Happy Users</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">500+</span>
+                    <span class="hero-stat-label">Parking Spots</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">98%</span>
+                    <span class="hero-stat-label">Satisfaction</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; position: relative; z-index: 2;">
+                <button class="btn" onclick="document.getElementById('bookingWidget').scrollIntoView({behavior: 'smooth'})">✨ Book Now</button>
+                <button class="btn btn-secondary">📱 Download App</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section style="background: #f4f4f4; padding: 60px 0;" id="bookingWidget">
+        <div class="container">
+            <div class="booking-widget">
+                <h3>🅿️ Find & Book Your Parking</h3>
+                
+                <div class="booking-tabs">
+                    <button class="tab-btn active" onclick="switchTab('hourly')">⏰ Hourly Parking</button>
+                    <button class="tab-btn" onclick="switchTab('monthly')">📅 Monthly Pass</button>
+                    <button class="tab-btn" onclick="switchTab('corporate')">🏢 Corporate</button>
+                </div>
+
+                <!-- Hourly Parking Tab -->
+                <div id="hourly" class="tab-content active">
+                    <div class="filter-chips">
+                        <span class="chip active" onclick="filterByPrice(this, 'all')">All Locations</span>
+                        <span class="chip" onclick="filterByPrice(this, '35-40')">Budget (₹35-40)</span>
+                        <span class="chip" onclick="filterByPrice(this, '40-50')">Standard (₹40-50)</span>
+                        <span class="chip" onclick="filterByPrice(this, '50+')">Premium (₹50+)</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 20%"></div>
+                    </div>
+
+                    <div class="booking-form">
+                        <div class="form-field">
+                            <label for="location">Select Location</label>
+                            <select id="location" onchange="updateAvailability()">
+                                <option value="">Choose a location...</option>
+                                <option value="bandra">Bandra West - ₹50/hr</option>
+                                <option value="worli">Worli - ₹40/hr</option>
+                                <option value="powai">Powai - ₹35/hr</option>
+                            </select>
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="form-field">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" value="2026-02-20" min="2026-02-20">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="form-field">
+                            <label for="checkin">Check-in Time</label>
+                            <input type="time" id="checkin" value="09:00">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="form-field">
+                            <label for="checkout">Check-out Time</label>
+                            <input type="time" id="checkout" value="17:00">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Mobile Number (for SMS receipt)</label>
+                            <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" maxlength="10" pattern="[0-9]{10}">
+                            <div class="field-error"></div>
+                        </div>
+                        <button class="search-btn" onclick="updateAvailability()">🔍 Search Availability</button>
+                    </div>
+
+                    <div id="summaryCard" class="summary-card" style="display: none;">
+                        <div class="summary-row">
+                            <span class="summary-label">Location:</span>
+                            <span class="summary-value" id="summaryLocation">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Date & Time:</span>
+                            <span class="summary-value" id="summaryTime">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Duration:</span>
+                            <span class="summary-value" id="summaryDuration">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Rate per Hour:</span>
+                            <span class="summary-value" id="summaryRate">-</span>
+                        </div>
+                        <div class="summary-total">
+                            Total: ₹<span id="summaryTotal">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Pass Tab -->
+                <div id="monthly" class="tab-content">
+                    <div class="booking-form">
+                        <div class="form-field">
+                            <label for="monthLocation">Select Location</label>
+                            <select id="monthLocation">
+                                <option value="bandra">Bandra West - ₹3000/month</option>
+                                <option value="worli">Worli - ₹2400/month</option>
+                                <option value="powai">Powai - ₹2100/month</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <select id="vehicleType">
+                                <option value="bike">Two Wheeler</option>
+                                <option value="car">Four Wheeler</option>
+                                <option value="suv">SUV</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="monthStart">Start Date</label>
+                            <input type="date" id="monthStart">
+                        </div>
+                        <button class="search-btn" onclick="monthlyPlanSelected()">Get Monthly Pass</button>
+                    </div>
+                </div>
+
+                <!-- Corporate Tab -->
+                <div id="corporate" class="tab-content">
+                    <div class="booking-form">
+                        <div class="form-field">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" placeholder="Enter your company name">
+                        </div>
+                        <div class="form-field">
+                            <label for="employees">Number of Employees</label>
+                            <input type="number" id="employees" placeholder="How many parking spots needed?">
+                        </div>
+                        <div class="form-field">
+                            <label for="corporateLocation">Preferred Location</label>
+                            <select id="corporateLocation">
+                                <option value="">Select location...</option>
+                                <option value="bandra">Bandra West</option>
+                                <option value="worli">Worli</option>
+                                <option value="powai">Powai</option>
+                            </select>
+                        </div>
+                        <button class="search-btn" onclick="requestCorporateQuote()">Request Quote</button>
+                    </div>
+                </div>
+
+                <div id="availabilityResults" class="availability-section" style="display: none;">
+                    <h3 style="margin-bottom: 1.5rem; color: #333;">Available Parking Spots</h3>
+                    <div class="availability-grid" id="parkingResults"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy Mobile App</h3>
+                    <p>Reserve parking spots instantly from your smartphone with real-time availability updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Secure Payments</h3>
+                    <p>Multiple payment options including UPI, cards, and wallets with secured transactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>GPS Navigation</h3>
+                    <p>Built-in navigation to guide you directly to your reserved parking spot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Monthly Passes</h3>
+                    <p>Affordable monthly parking subscriptions for regular commuters in Mumbai.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Hourly Parking</h3>
+                    <p>Pay-as-you-go parking for short-term needs at competitive rates.</p>
+                </div>
+                <div class="service-item">
+                    <h3>24/7 Availability</h3>
+                    <p>Round-the-clock parking availability across all our locations.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Corporate Packages</h3>
+                    <p>Bulk parking solutions for offices with special corporate rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="portfolio" id="locations">
+        <div class="container">
+            <h2 class="section-title">Our Parking Locations</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Bandra West</div>
+                    <div class="portfolio-info">
+                        <h3>Bandra West</h3>
+                        <p>120 spots | ₹50/hour | Premium location near shopping centers</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Worli</div>
+                    <div class="portfolio-info">
+                        <h3>Worli</h3>
+                        <p>200 spots | ₹40/hour | Business district with 24/7 security</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">Powai</div>
+                    <div class="portfolio-info">
+                        <h3>Powai</h3>
+                        <p>180 spots | ₹35/hour | IT hub with covered parking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Finally, no more circling around looking for parking! ParkHub has made my daily commute so much easier."</div>
+                    <div class="testimonial-author">- Rajesh Kumar</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"The app is super user-friendly and the payment process is seamless. Best parking solution in Mumbai!"</div>
+                    <div class="testimonial-author">- Priya Sharma</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Our office team loves the corporate package. Saves us so much time and money every month."</div>
+                    <div class="testimonial-author">- Aditya Patel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 80px 0; background: white;" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>❓ How do I book a parking spot?</strong>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Simply select your location, date, and time above, then click "Search Availability". Choose your preferred spot and complete the booking through our secure payment gateway.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>❓ What payment methods do you accept?</strong>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We accept UPI, credit cards, debit cards, net banking, and all major digital wallets including Google Pay, Apple Pay, and PayTM.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>❓ Can I cancel my booking?</strong>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! You can cancel up to 2 hours before your check-in time. A full refund will be processed to your original payment method.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>❓ Are your parking spots secure?</strong>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        All our parking locations have 24/7 CCTV surveillance, trained security staff, and access control systems for maximum security.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>❓ Do you offer corporate packages?</strong>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer special corporate packages with bulk discounts. Contact us for a customized quote based on your requirements.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer / Bottom Navigation -->
+    <footer>
+        <div class="bottom-nav">
+            <a href="#" class="nav-item active" onclick="switchTab('home', event)">
+                <span>🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item" onclick="switchTab('book', event)">
+                <span>🅿️</span>
+                <span>Book</span>
+            </a>
+            <a href="#" class="nav-item" onclick="switchTab('locations', event)">
+                <span>📍</span>
+                <span>Spots</span>
+            </a>
+            <a href="#" class="nav-item" onclick="switchTab('help', event)">
+                <span>☎️</span>
+                <span>Help</span>
+            </a>
+        </div>
+
+        <div class="footer-content" style="display: none;">
+            <div class="footer-section">
+                <h4>About ParkHub</h4>
+                <p>Mumbai's leading smart parking solution making urban parking convenient and affordable for everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Email: support@parkhubmumbai.com</li>
+                    <li>Phone: +91 9561738221</li>
+                    <li>Address: Bandra, Mumbai, Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Confirm Your Booking</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modalBody"></div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                <button class="book-btn" style="flex: 1; background: #27ae60;" onclick="completeBooking()">Confirm Booking</button>
+                <button class="book-btn" style="flex: 1; background: #95a5a6;" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toast notification system
+        function showToast(message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type} show`;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            const location = document.getElementById('location').value;
+            const date = document.getElementById('date').value;
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+
+            // Reset error states
+            document.querySelectorAll('.form-field').forEach(field => {
+                field.classList.remove('error', 'success');
+                if (field.querySelector('.field-error')) {
+                    field.querySelector('.field-error').classList.remove('show');
+                }
+            });
+
+            // Validate location
+            if (!location) {
+                setFieldError('location', 'Please select a location');
+                isValid = false;
+            } else {
+                setFieldSuccess('location');
+            }
+
+            // Validate date
+            if (!date) {
+                setFieldError('date', 'Please select a date');
+                isValid = false;
+            } else {
+                setFieldSuccess('date');
+            }
+
+            // Validate times
+            if (!checkin) {
+                setFieldError('checkin', 'Please select check-in time');
+                isValid = false;
+            } else {
+                setFieldSuccess('checkin');
+            }
+
+            if (!checkout) {
+                setFieldError('checkout', 'Please select check-out time');
+                isValid = false;
+            } else if (checkin >= checkout) {
+                setFieldError('checkout', 'Check-out must be after check-in');
+                isValid = false;
+            } else {
+                setFieldSuccess('checkout');
+            }
+
+            return isValid;
+        }
+
+        function setFieldError(fieldId, message) {
+            const field = document.getElementById(fieldId).parentElement;
+            field.classList.add('error');
+            if (field.querySelector('.field-error')) {
+                field.querySelector('.field-error').textContent = message;
+                field.querySelector('.field-error').classList.add('show');
+            }
+        }
+
+        function setFieldSuccess(fieldId) {
+            const field = document.getElementById(fieldId).parentElement;
+            field.classList.add('success');
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+
+            // Deactivate all buttons
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected tab and activate button
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Filter by price
+        function filterByPrice(element, range) {
+            document.querySelectorAll('.chip').forEach(chip => chip.classList.remove('active'));
+            element.classList.add('active');
+            showToast('Filter applied: ' + element.textContent, 'info');
+        }
+
+        // Save booking for later
+        function saveBooking(location) {
+            const parkingNames = {
+                bandra: 'Bandra West',
+                worli: 'Worli',
+                powai: 'Powai'
+            };
+            showToast(`✓ ${parkingNames[location]} saved to your wishlist`, 'success');
+        }
+
+        // FAQ toggle functionality
+        function toggleFAQ(element) {
+            const question = element;
+            const answer = element.nextElementSibling;
+
+            // Close other FAQs
+            document.querySelectorAll('.faq-question').forEach(q => {
+                if (q !== question) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                }
+            });
+
+            // Toggle current FAQ
+            question.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
+
+        // Sample parking data
+        const parkingData = {
+            bandra: {
+                name: 'Bandra West',
+                address: 'Linking Road Area, Bandra West',
+                totalSpots: 120,
+                price: 50,
+                type: 'Premium location near shopping centers',
+                occupied: Math.floor(Math.random() * 40 + 20)
+            },
+            worli: {
+                name: 'Worli',
+                address: 'Business District, Worli',
+                totalSpots: 200,
+                price: 40,
+                type: 'Business district with 24/7 security',
+                occupied: Math.floor(Math.random() * 80 + 40)
+            },
+            powai: {
+                name: 'Powai',
+                address: 'Hiranandani Gardens, Powai',
+                totalSpots: 180,
+                price: 35,
+                type: 'IT hub with covered parking',
+                occupied: Math.floor(Math.random() * 70 + 30)
+            }
+        };
+
+        function updateAvailability() {
+            // Validate form first
+            if (!validateForm()) {
+                showToast('Please fill in all required fields correctly', 'error');
+                return;
+            }
+
+            const location = document.getElementById('location').value;
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const date = document.getElementById('date').value;
+
+            const parking = parkingData[location];
+            const available = parking.totalSpots - parking.occupied;
+            const hours = calculateHours(checkin, checkout);
+            const totalPrice = hours * parking.price;
+
+            // Update summary card
+            document.getElementById('summaryLocation').textContent = parking.name;
+            document.getElementById('summaryTime').textContent = `${date} | ${checkin} - ${checkout}`;
+            document.getElementById('summaryDuration').textContent = `${hours} ${hours === 1 ? 'hour' : 'hours'}`;
+            document.getElementById('summaryRate').textContent = `₹${parking.price}`;
+            document.getElementById('summaryTotal').textContent = totalPrice;
+            document.getElementById('summaryCard').style.display = 'block';
+
+            let availabilityHTML = `
+                <div class="parking-card">
+                    <h4>📍 ${parking.name}</h4>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">${parking.address}</p>
+                    
+                    <div class="parking-stats">
+                        <span class="available">✓ Available: ${available}</span>
+                        <span class="occupied">Occupied: ${parking.occupied}</span>
+                    </div>
+                    
+                    <div class="availability-bar">
+                        <div class="availability-fill" style="width: ${(available/parking.totalSpots)*100}%">
+                            ${Math.round((available/parking.totalSpots)*100)}%
+                        </div>
+                    </div>
+
+                    <div style="margin: 1rem 0; color: #666; font-size: 0.9rem;">
+                        <strong>${parking.type}</strong>
+                    </div>
+
+                    <div class="price">₹${parking.price}/hour</div>
+                    
+                    <div style="background: #e8f5e9; padding: 0.8rem; border-radius: 5px; margin: 1rem 0; font-size: 0.9rem;">
+                        <strong>💰 Booking Summary:</strong><br>
+                        Duration: ${hours} ${hours === 1 ? 'hour' : 'hours'}<br>
+                        <strong style="color: #27ae60;">Total: ₹${totalPrice}</strong>
+                    </div>
+
+                    ${available > 0 ? `
+                        <div class="quick-actions">
+                            <button class="action-btn primary" onclick="openBookingModal('${location}', ${totalPrice}, ${hours})">✓ Book Now</button>
+                            <button class="action-btn" onclick="saveBooking('${location}')">♡ Save for Later</button>
+                        </div>
+                    ` : '<button class="action-btn" style="background: #95a5a6; color: white; border-color: #95a5a6; cursor: not-allowed;" disabled>❌ No Spots Available</button>'}
+                </div>
+            `;
+
+            document.getElementById('parkingResults').innerHTML = availabilityHTML;
+            document.getElementById('availabilityResults').style.display = 'block';
+            showToast('✓ Availability updated', 'success');
+        }
+
+        function calculateHours(checkin, checkout) {
+            const [inH, inM] = checkin.split(':').map(Number);
+            const [outH, outM] = checkout.split(':').map(Number);
+            let hours = (outH - inH) + (outM - inM) / 60;
+            return Math.ceil(hours);
+        }
+
+        function openBookingModal(locationKey, totalPrice, hours) {
+            const parking = parkingData[locationKey];
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const date = document.getElementById('date').value;
+            const phone = document.getElementById('phone') ? document.getElementById('phone').value : '';
+
+            const modalBody = `
+                <div class="confirmation-text">
+                    ✓ Parking spot reserved!
+                </div>
+                <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+                    <h4 style="color: #667eea; margin-bottom: 1rem;">📋 Booking Details</h4>
+                    <p><strong>Location:</strong> ${parking.name}</p>
+                    <p><strong>Address:</strong> ${parking.address}</p>
+                    <p><strong>Date:</strong> ${date}</p>
+                    <p><strong>Check-in:</strong> ${checkin}</p>
+                    <p><strong>Check-out:</strong> ${checkout}</p>
+                    <p><strong>Duration:</strong> ${hours} ${hours === 1 ? 'hour' : 'hours'}</p>
+                    <p><strong>Price/Hour:</strong> ₹${parking.pricePerHour}</p>
+                    <p style="margin-top: 1rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+                        <strong style="font-size: 1.1rem; color: #27ae60;">💰 Total Amount: ₹${totalPrice}</strong>
+                    </p>
+                </div>
+
+                <div style="background: #e8f5e9; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <h4 style="color: #27ae60; margin-bottom: 0.8rem;">📱 SMS Receipt</h4>
+                    <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                        Enter your phone number to receive SMS receipt:
+                    </label>
+                    <input type="tel" id="smsPhone" placeholder="Enter mobile number" 
+                           style="width: 100%; padding: 0.7rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; margin-bottom: 0.5rem;"
+                           value="${phone}">
+                    <p style="font-size: 0.8rem; color: #666; margin: 0;">SMS will include: Booking ID, Spot #, Date, Time & Amount</p>
+                </div>
+
+                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <h4 style="color: #ff9800; margin-bottom: 0.8rem;">💳 Payment Options</h4>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="processPayment('razorpay', ${totalPrice})" 
+                                style="flex: 1; min-width: 120px; padding: 0.8rem; background: #3f51b5; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                            🔐 Razorpay
+                        </button>
+                        <button onclick="processPayment('upi', ${totalPrice})" 
+                                style="flex: 1; min-width: 120px; padding: 0.8rem; background: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                            💸 UPI
+                        </button>
+                        <button onclick="processPayment('card', ${totalPrice})" 
+                                style="flex: 1; min-width: 120px; padding: 0.8rem; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                            💳 Card
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('modalBody').innerHTML = modalBody;
+            document.getElementById('bookingModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+        }
+
+        function completeBooking() {
+            showToast('✓ Booking confirmed! SMS sent with spot details.', 'success');
+            closeModal();
+            document.getElementById('location').value = '';
+            document.getElementById('availabilityResults').style.display = 'none';
+            document.getElementById('summaryCard').style.display = 'none';
+        }
+
+        function processPayment(method, amount) {
+            const phone = document.getElementById('smsPhone').value;
+            
+            if (!phone) {
+                showToast('⚠️ Please enter your phone number for SMS receipt', 'error');
+                document.getElementById('smsPhone').style.borderColor = '#e74c3c';
+                return;
+            }
+
+            if (!/^\d{10}$/.test(phone)) {
+                showToast('⚠️ Please enter a valid 10-digit mobile number', 'error');
+                return;
+            }
+
+            // Generate booking ID
+            const bookingId = 'BK' + Date.now().toString().slice(-8);
+            const spotNumber = Math.floor(Math.random() * 100) + 1;
+
+            // Payment processing based on method
+            if (method === 'razorpay') {
+                initiateRazorpayPayment(amount, phone, bookingId, spotNumber);
+            } else if (method === 'upi') {
+                initiateUPIPayment(amount, phone, bookingId, spotNumber);
+            } else if (method === 'card') {
+                showToast('💳 Card payment coming soon! Use Razorpay for now.', 'info');
+            }
+        }
+
+        function initiateRazorpayPayment(amount, phone, bookingId, spotNumber) {
+            // Razorpay payment integration
+            showToast('🔐 Processing Razorpay payment...', 'info');
+            
+            // In production, this would call the actual Razorpay API
+            // For now, simulate payment success after 2 seconds
+            setTimeout(() => {
+                completePayment(phone, bookingId, spotNumber, amount);
+            }, 2000);
+        }
+
+        function initiateUPIPayment(amount, phone, bookingId, spotNumber) {
+            // UPI payment integration
+            showToast('💸 Processing UPI payment...', 'info');
+            
+            // In production, this would call the actual UPI API
+            // For now, simulate payment success after 2 seconds
+            setTimeout(() => {
+                completePayment(phone, bookingId, spotNumber, amount);
+            }, 2000);
+        }
+
+        function completePayment(phone, bookingId, spotNumber, amount) {
+            const location = document.getElementById('location').value;
+            const parking = parkingData[location];
+            const date = document.getElementById('date').value;
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+
+            // Create SMS receipt message
+            const smsMessage = `ParkHub Receipt - Booking ${bookingId}
+Location: ${parking.name}
+Spot #${spotNumber}
+Date: ${date} | ${checkin}-${checkout}
+Amount: ₹${amount}
+Status: CONFIRMED ✓
+Call: +91 9561738221`;
+
+            // Log SMS for demo (in production, send via SMS gateway)
+            console.log('📱 SMS Receipt:', smsMessage);
+            console.log('Phone:', phone);
+
+            // Show success message
+            showToast(`✅ Payment successful! SMS sent to ${phone}`, 'success');
+            
+            // Store booking in local storage
+            const booking = {
+                id: bookingId,
+                location: location,
+                spotNumber: spotNumber,
+                date: date,
+                checkin: checkin,
+                checkout: checkout,
+                amount: amount,
+                phone: phone,
+                status: 'CONFIRMED',
+                timestamp: new Date().toISOString()
+            };
+            
+            let bookings = JSON.parse(localStorage.getItem('parkingBookings')) || [];
+            bookings.push(booking);
+            localStorage.setItem('parkingBookings', JSON.stringify(bookings));
+
+            // Close modal and reset form
+            closeModal();
+            document.getElementById('location').value = '';
+            document.getElementById('availabilityResults').style.display = 'none';
+            document.getElementById('summaryCard').style.display = 'none';
+
+            // Show booking confirmation
+            showBookingConfirmation(bookingId, spotNumber, parking.name, amount);
+        }
+
+        function showBookingConfirmation(bookingId, spotNumber, location, amount) {
+            const confirmation = `
+                <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                            background: white; padding: 2rem; border-radius: 12px; text-align: center; 
+                            box-shadow: 0 8px 32px rgba(0,0,0,0.2); z-index: 5000; max-width: 90%; width: 100%;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                    <h2 style="color: #27ae60; margin-bottom: 1rem;">Payment Successful!</h2>
+                    <div style="background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; text-align: left;">
+                        <p><strong>Booking ID:</strong> ${bookingId}</p>
+                        <p><strong>Parking Spot:</strong> #${spotNumber}</p>
+                        <p><strong>Location:</strong> ${location}</p>
+                        <p><strong>Amount Paid:</strong> ₹${amount}</p>
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem; margin: 1rem 0;">
+                        📱 SMS receipt sent with all details<br>
+                        🅿️ Show your booking ID at the entrance
+                    </p>
+                    <button onclick="closeConfirmation()" style="width: 100%; padding: 0.8rem; background: #667eea; 
+                                   color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                        Done
+                    </button>
+                </div>
+                <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 4999;" 
+                     onclick="closeConfirmation()"></div>
+            `;
+
+            document.body.insertAdjacentHTML('beforeend', confirmation);
+        }
+
+        function closeConfirmation() {
+            const confirmation = document.querySelector('[style*="position: fixed"][style*="top: 50%"]');
+            const overlay = document.querySelector('[style*="position: fixed"][style*="background: rgba"]');
+            if (confirmation) confirmation.remove();
+            if (overlay) overlay.remove();
+        }
+
+        function monthlyPlanSelected() {
+            const location = document.getElementById('monthLocation').value;
+            const vehicleType = document.getElementById('vehicleType').value;
+            showToast(`✓ Monthly pass request submitted! Check email for confirmation.`, 'success');
+        }
+
+        function requestCorporateQuote() {
+            const company = document.getElementById('companyName').value;
+            const employees = document.getElementById('employees').value;
+            
+            if (!company || !employees) {
+                showToast('Please fill in all fields', 'error');
+                return;
+            }
+            
+            showToast(`✓ Quote request submitted! We'll contact you within 24 hours.`, 'success');
+        }
+
+        function handleContactForm(e) {
+            e.preventDefault();
+            showToast('✓ Message sent! We will get back to you soon.', 'success');
+            e.target.reset();
+        }
+
+        function toggleUserMenu() {
+            showToast('👤 Download the ParkHub app to create your account', 'info');
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('bookingModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+
+            // Register Service Worker for offline functionality and PWA
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/parkhub/service-worker.js')
+                    .then(registration => {
+                        console.log('✓ Service Worker registered successfully');
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            }
+
+            // Handle WebApp installation prompt
+            let deferredPrompt;
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                console.log('✓ App can be installed!');
+            });
+
+            // Show install button if app can be installed
+            window.addEventListener('appinstalled', () => {
+                console.log('✓ ParkHub app installed successfully!');
+                showToast('✓ ParkHub app installed! Add to home screen for quick access.', 'success');
+            });
+
+            // Handle notification permission
+            if ('Notification' in window && Notification.permission === 'default') {
+                Notification.requestPermission();
+            }
+
+            // Listen for messages from service worker
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.addEventListener('message', event => {
+                    if (event.data.type === 'SYNC_BOOKINGS') {
+                        console.log(event.data.message);
+                        showToast('📱 Your bookings are synced!', 'success');
+                    }
+                });
+            }
+        });
+
+        // Navigation handler for bottom nav tabs
+        function switchTab(tab, event) {
+            if (event) {
+                event.preventDefault();
+            }
+            
+            const sections = {
+                'home': 'hero',
+                'book': 'bookingWidget',
+                'locations': 'locations',
+                'help': 'contact'
+            };
+
+            // Hide all sections
+            Object.values(sections).forEach(sectionId => {
+                const element = document.getElementById(sectionId);
+                if (element) element.style.display = 'none';
+            });
+
+            // Show selected section
+            if (sections[tab]) {
+                const targetSection = document.getElementById(sections[tab]);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+            // Update active nav item
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            if (event && event.target.closest('.nav-item')) {
+                event.target.closest('.nav-item').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
